@@ -31,7 +31,7 @@
 
 
 
-    <div class="element1">
+    <div id="element1" class="element1">
 
         <div class="left">
           <img id="myImg" src="https://www.w3schools.com/w3images/tablesetting2.jpg">
@@ -193,9 +193,9 @@
     $(document).ready(function(){
 
 
-
             function myFunction() {
               console.log("start2");
+
 
               if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
                 document.getElementById("myImg").className = "slideUp";
@@ -209,13 +209,15 @@
               if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
                 document.getElementById("myImg3").className = "slideUp3";
                 console.log("123123");
+                document.getElementById("myImg3").setAttribute("style", "display:visible");
 
               }
 
 
-              if (document.body.scrollTop > 2800 || document.documentElement.scrollTop > 2800) {
+              if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
                 document.getElementById("myImg4").className = "slideUp3";
                 console.log("123123");
+                document.getElementById("myImg4").setAttribute("style", "display:visible");
 
               }
 
