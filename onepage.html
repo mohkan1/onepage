@@ -196,21 +196,24 @@
       console.log("sdfgh");
 
             function myFunction() {
-              console.log("123123");
 
               if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
                 document.getElementById("myImg").className = "slideUp";
                 document.getElementById("myImg2").className = "slideUp2";
+                console.log("123123");
+
               }
 
               if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
                 document.getElementById("myImg3").className = "slideUp3";
+                console.log("123123");
 
               }
 
 
               if (document.body.scrollTop > 2800 || document.documentElement.scrollTop > 2800) {
                 document.getElementById("myImg4").className = "slideUp3";
+                console.log("123123");
 
               }
 
@@ -220,7 +223,6 @@
             //shoing the elements
             window.onscroll = function() {
               myFunction();
-              console.log("sdfgh");
             };
 
     });
