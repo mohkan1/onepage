@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/onepage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hungry!</title>
@@ -187,51 +186,7 @@
           <button type="submit" id="top">top</button>
         </footer>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../JAVASCIPT/onepage.js"></script>
-    <script>
-
-    $(document).ready(function(){
-
-
-            function myFunction() {
-              console.log("start2");
-
-
-              if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-                document.getElementById("myImg").className = "slideUp";
-                document.getElementById("myImg2").className = "slideUp2";
-                console.log("123123");
-                document.getElementById("myImg").setAttribute("style", "display:visible");
-                document.getElementById("myImg2").setAttribute("style", "display:visible");
-
-              }
-
-              if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
-                document.getElementById("myImg3").className = "slideUp3";
-                console.log("123123");
-                document.getElementById("myImg3").setAttribute("style", "display:visible");
-
-              }
-
-
-              if (document.body.scrollTop > 2700 || document.documentElement.scrollTop > 2700) {
-                document.getElementById("myImg4").className = "slideUp3";
-                console.log("123123");
-                document.getElementById("myImg4").setAttribute("style", "display:visible");
-
-              }
-
-            }
-
-
-            //shoing the elements
-            window.onscroll = function() {
-              myFunction();
-            };
-
-    });
-
-
-</script>
   </body>
 </html>
